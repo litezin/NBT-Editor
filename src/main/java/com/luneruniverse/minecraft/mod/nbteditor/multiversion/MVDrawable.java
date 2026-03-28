@@ -9,8 +9,5 @@ public interface MVDrawable extends Drawable {
 	public default void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		render(MVDrawableHelper.getMatrices(context), mouseX, mouseY, delta);
 	}
-	public default void method_25394(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-		render(matrices, mouseX, mouseY, delta);
-	}
 	public void render(MatrixStack matrices, int mouseX, int mouseY, float delta);
 }

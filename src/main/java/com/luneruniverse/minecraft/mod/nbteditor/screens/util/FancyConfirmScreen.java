@@ -47,9 +47,6 @@ public class FancyConfirmScreen extends ConfirmScreen implements IgnoreCloseScre
 		MainUtil.renderLogo(matrices);
 		matrices.pop();
 	}
-	public final void method_25394(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-		render(matrices, mouseX, mouseY, delta);
-	}
 	@Override
 	public final void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		render(MVDrawableHelper.getMatrices(context), mouseX, mouseY, delta);
