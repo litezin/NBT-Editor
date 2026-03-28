@@ -45,7 +45,9 @@
     "java": ">=16"
   },
   "suggests": {
-    "nbt_ac": ">=1.1"
+    "nbt_ac": ">=1.1",
+    "connector": "*",
+    "forgified-fabric-api": "*"
   },
   
   "custom": {
