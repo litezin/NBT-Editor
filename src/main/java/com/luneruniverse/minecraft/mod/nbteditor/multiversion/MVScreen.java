@@ -16,9 +16,6 @@ public class MVScreen extends Screen implements OldEventBehavior, IgnoreCloseScr
 	public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
 		MVDrawableHelper.super_render(MVScreen.class, this, matrices, mouseX, mouseY, delta);
 	}
-	public final void method_25394(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-		render(matrices, mouseX, mouseY, delta);
-	}
 	@Override
 	public final void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		render(MVDrawableHelper.getMatrices(context), mouseX, mouseY, delta);

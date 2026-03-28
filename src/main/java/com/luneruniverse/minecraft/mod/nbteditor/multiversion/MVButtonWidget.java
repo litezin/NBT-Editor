@@ -49,9 +49,6 @@ public class MVButtonWidget extends PressableWidget {
 	public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
 		MVDrawableHelper.super_render(MVButtonWidget.class, this, matrices, mouseX, mouseY, delta);
 	}
-	public final void method_25394(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-		render(matrices, mouseX, mouseY, delta);
-	}
 	@Override
 	public final void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		render(MVDrawableHelper.getMatrices(context), mouseX, mouseY, delta);
@@ -72,12 +69,6 @@ public class MVButtonWidget extends PressableWidget {
 	@Override
 	protected final void renderWidget(DrawContext context, int mouseX, int mouseY, float delta) {
 		renderButton(MVDrawableHelper.getMatrices(context), mouseX, mouseY, delta);
-	}
-	public final void method_48579(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-		renderButton(matrices, mouseX, mouseY, delta);
-	}
-	public final void method_25359(MatrixStack matrices, int mouseX, int mouseY, float delta) { // renderButton <= 1.19.3
-		renderButton(matrices, mouseX, mouseY, delta);
 	}
 	private void super_renderButton(String intermediary, MatrixStack matrices, int mouseX, int mouseY, float delta) {
 		try {
